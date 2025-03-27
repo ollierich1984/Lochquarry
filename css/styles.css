@@ -1,0 +1,383 @@
+/*  Universal Selector - Reset all html elements to the following */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0;
+    border: 0;
+}
+
+/* set the html tag to max-width of the screen */
+html {
+    max-width: 100%;
+    font-family: 'Merriweather', serif;
+}
+
+/* Header Section */
+
+.header-strip {
+    height: 3cm;
+    width: 100%;
+    background-color: antiquewhite;
+}
+
+/* Style the header section */
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Set image width to 200px */
+.logo {
+    width: 800px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+/* Set the width of the navigation 100% of the remaining space */
+.header-nav {
+    width: 100%;
+}
+
+/* Set the unorder list to display flex and change flow to horizontal */
+/* move the content to the end and set the gap between children to 20px */
+.header-ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+/* Remove underline from links */
+a {
+    color: #A0522D;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Pseuod-Class hover */
+a:hover {
+    border-bottom: 2px solid #A0522D;
+}
+
+/* remove bullet point */
+li {
+    list-style-type: none;
+}
+
+/* End of Header Section */
+
+/* Main Section */
+
+body {
+    background-image: url('../images/background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: overlay;
+    color: #fff;
+    font-family: 'Merriweather', serif;
+    overflow-x: hidden;
+}
+
+h1, h2 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#scroll-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    display: none; 
+    z-index: 999;
+    scroll-behavior: smooth;
+}
+
+#scroll-to-top-btn:hover {
+    background-color: #0056b3;
+    font-size: 20px;
+}
+/* Hero Section */
+
+.hero {
+    height: 600px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: cover;
+    padding-bottom: 100px;
+}
+
+.hero h1,
+.hero button {
+    position: absolute;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 60px;
+    padding-bottom: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    text-transform: uppercase;
+}
+
+/* End of Hero Section */
+
+/* Activities Section */
+
+.activities {
+    display: flex;
+    justify-content: center;  
+    
+    align-items: center;      
+    flex-direction: column;   
+    text-align: center;
+}
+
+.activities h1 {
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: #A0522D;
+    background-color: antiquewhite;
+    display: inline-block;
+    border-radius: 15px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    margin: 20px auto;
+}
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    gap: 20px; 
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 300px; 
+    height: 450px; 
+    border-radius: 10px;
+    background-color: antiquewhite;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.card-image {
+    padding: 15px; 
+}
+
+.card-image img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+}
+
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    word-wrap: normal;
+}
+
+.card h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #A0522D;
+    text-transform: uppercase;
+}
+
+.card p {
+    font-size: 1em;
+    line-height: 1.4;
+    background-color: #fff; 
+    border-radius: 10px;
+}
+
+
+.card:hover {
+    transform: scale(1.05); 
+}
+
+.card a {
+    font-size: 14px;
+}
+
+
+.site-info-page .card-image img {
+    height: 150px; 
+}
+
+/* introduction section */
+
+.intro-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+}
+
+.intro-text, .extra-info {
+    background-color: antiquewhite;
+    color: #A0522D;
+    text-align: center;
+    padding: 30px 20px;
+    margin: 30px 0;
+    border-radius: 12px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.intro-text h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.intro-text p, .extra-info p {
+    font-size: 20px;
+    line-height: 1.6;
+    /* background-color: #fff; */
+    border-radius: 12px;
+}
+
+.extra-info {
+    text-align: center; 
+    margin-top: 50px;
+    padding: 20px;
+    background-color: antiquewhite;
+    color: #A0522D;
+    border-radius: 12px;
+    max-width: 800px; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.activities + .review h1 {
+    margin-top: 40px; 
+}
+
+/*End of Activities Section
+
+/* review section */
+
+.review {
+    color: #A0522D;
+    text-align: center;
+    padding: 100px 100px;
+    overflow: hidden;
+}
+
+.review h1 {
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: #A0522D;
+    background-color: antiquewhite;
+    display: inline-block;
+    border-radius: 15px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: calc(100vw * 8);
+    justify-content: flex-start;
+    position: relative;
+    transition: transform 1s ease-in-out;
+    scroll-snap-type: x mandatory ;
+    gap: 0;
+}
+
+.carousel-item {
+    min-width: 100vw;  
+    width: 100vw;
+    flex-shrink: 0;     
+    padding: 20px;
+    background-color: antiquewhite;
+    border-radius: 12px;
+    box-sizing: border-box;
+    scroll-snap-align: start;
+}
+
+q {
+    font-size: 30px;
+    font-style: italic;
+    padding: 50px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+}
+
+p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #A0522D;
+}
+
+/* End of Reviews Section
+
+/* Start of Footer Section */
+
+footer {
+    background-color: #f4f4f4;
+    padding: 40px 0;
+    color: #A0522D;
+    line-height: 32px;
+    font-size: 18px;
+    height: 300px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px 0;
+    flex-wrap: wrap;
+}
+
+i {
+    font-size: 30px;
+    padding: 20px 10px;
+}
+
+i:first-of-type {
+    padding-left: 0;
+}
+
+.footer-nav a {
+    color: #A0522D;
+}
